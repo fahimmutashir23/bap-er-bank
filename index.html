@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"data-theme="aqua">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +9,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <section class="text-center mt-10 w-9/12 mx-auto">
+    <section class="text-center mt-10">
         <h1 class="text-5xl"><span class="text-amber-200">WELCOME</span> TO YOUR BANK</h1>
-       <section class="grid grid-cols-1 lg:grid-cols-3 gap-3 mt-10 text-black">
-            <div class="bg-blue-200 rounded-md text-center p-4">
-                 <h1 class="text-2xl">Diposit</h1>
-                 <h1 class="text-4xl">$ <span id="diposistDisplay">00</span></h1>
-            </div>
-            <div class="bg-orange-100 rounded-md text-center p-4">
-                 <h1 class="text-2xl">Withdraw</h1>
-                 <h1 class="text-4xl">$ <span id="WithdrawDisplay">00</span></h1>
-            </div>
-            <div class="bg-slate-300 rounded-md text-center p-4">
-                 <h1 class="text-2xl">Total Balance</h1>
-                 <h1 class="text-4xl">$ <span id="TotalDisplay">500</span></h1>
-            </div>
-       </section>
-       <section class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-3">
-        <div class="bg-violet-300 rounded-md text-center p-4">
-            <h1 class="text-2xl mb-2 text-black font-semibold">Diposit your Balance</h1>
-            <input id="dipositInput" type="text" placeholder="Amount you want" class="input w-full bg-slate-500 max-w-xs block mx-auto mb-2"/>
-
-            <button id="dipositInputBtn" class="btn btn-gost bg-slate-700">Submit</button>
+        <div class="p-10 bg-gray-500 mt-5 w-9/12 mx-auto rounded-lg">
+            <input id="loginInputemail" type="email" placeholder="your email" class="input w-full max-w-xs block mx-auto mb-2"/>
+            <input id="loginInputPassword" type="password" placeholder="your password" class="input w-full max-w-xs block mx-auto mb-2"/>
+            <button id="loginInputBtn" class="btn btn-gost">Submit</button>
         </div>
-        <div class="bg-violet-300 rounded-md text-center p-4">
-            <h1 class="text-2xl mb-2 text-black font-semibold">Withdraw your balance</h1>
-             <input id="withdrawInput" type="text" placeholder="Amount you want" class="input w-full bg-slate-500 max-w-xs block mx-auto mb-2"/>
-
-        <button id="withdrawInputBtn" class="btn btn-gost bg-slate-700">Submit</button>
-        </div>
-       </section>
     </section>
-    <script src="function.js"></script>
-    <script src="withdraw.js"></script>
-    <script src="bank-deposit.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
