@@ -13,7 +13,7 @@ function btnEventHandeler (){
      const password = passwordValue.value;
  
     if(email === "fahimit23@gmail.com" && password === "fahimit23"){
-         window.location.href = "index.html"
+         window.location.href = "login.html"
     }
     else{
      alert("your password & email are not valid")
